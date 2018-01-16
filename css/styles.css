@@ -1,0 +1,351 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300,100,400);
+@import "http://netdna.bootstrapcdn.com/font-awesome/2.0/css/font-awesome.css";
+
+li [class^=icon-],
+li [class*=" icon-"] {
+  width: 40px !important;
+  font-size: 22px;
+  display:block !important;
+  position:absolute !important;
+  float:none !important;
+}
+
+
+::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.2)
+}
+
+:-moz-placeholder {
+  color: rgba(255, 255, 255, 0.2)
+}
+
+::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.2)
+}
+
+:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.2)
+}
+
+html {
+  height: 100%;
+  position: relative
+}
+
+body {
+  background-color: #16a085;
+  font-family: "Lato", sans-serif;
+  height: 2000px;
+  color: white
+}
+
+
+
+h1{
+  margin-bottom:50px !important;
+}
+h1 {
+  font: 300 3.2em/1.2 "Lato", sans-serif;
+  color: white;
+  margin: 0
+}
+
+header {
+  padding-top: 30px;
+  margin-bottom: 30px;
+  text-align:center;
+}
+
+.form {
+
+    position: relative;
+    text-align: center;
+    left: 20px;
+}
+
+#newTaskForm {
+   width: 100%;
+
+}
+
+.taskField {
+  position: relative;
+  text-align: center;
+}
+
+footer {
+
+    display: block;
+    margin: 0 auto;
+    width: 636px;
+    text-align: center;
+}
+
+footer ul {
+  list-style-type: none;
+}
+
+footer ul li {
+    display: block;
+    float: left;
+    margin-left: 3px;
+}
+
+input[type='text'] {
+  width: 482px;
+  height: 50px;
+  border: none;
+  background-color: transparent;
+  font-size: 20px;
+  font-weight:300;
+  color: white;
+  padding:5px 10px;
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+  background-color: rgba(0,0,0,.15);
+}
+
+
+#tasks {
+  list-style-type: none;
+  max-width: 500px;
+  margin: 30px auto;
+  text-align: center;
+
+}
+
+#tasks li {
+  z-index:1;
+  font-weight: 400;
+  box-shadow: 0 7px 0 -4px rgba(0, 0, 0, 0.2);
+  color: #444;
+  text-align: left;
+  min-height: 50px;
+  line-height: 46px;
+  font-size: 20px;
+  background-color: white;
+  margin-bottom: 10px;
+  padding: 10px;
+  padding-right: 60px;
+  position: relative;
+  opacity: 100;
+  word-wrap: break-word;
+  -webkit-transition: all .1s ease;
+  -o-transition: all .1s ease;
+  transition: all .1s ease
+}
+
+#tasks li:focus {
+  outline: none;
+}
+
+.count {
+  border:0;
+  width: 100px;
+  background-color: transparent;
+  padding: 10px 20px;
+  color: white;
+  cursor: pointer;
+  font-size: 16px
+}
+.count {
+  background-color: rgba(0,0,0,.25);
+  font:300 18px "Lato", "Arial", sans-serif;
+}
+
+
+.button_delete {
+  opacity: 0.6;
+  font-size: 24px;
+  /*color: transparent;*/
+  -webkit-transition: opacity .3s .1s ease;
+  transition: opacity .3s .1s ease;
+  cursor: pointer;
+}
+
+.button_delete:hover {
+  -webkit-text-stroke: 0.5px rgba(0, 0, 0, 0.5);
+}
+
+#tasks li.completedTask {
+  text-decoration: line-through;
+  color: #d4d8d5;
+}
+
+footer input[type="button"]{
+  border:0;
+  background-color: transparent;
+  padding: 10px 20px;
+  color: white;
+  cursor: pointer;
+  font-size: 16px
+}
+#clearCompleted{
+  background-color: rgba(0,0,0,.25);
+  font:300 18px "Lato", "Arial", sans-serif;
+}
+#Completed {
+  background-color: rgba(0,0,0,.25);
+  font:300 18px "Lato", "Arial", sans-serif;
+}
+#Active {
+  background-color: rgba(0,0,0,.25);
+  font:300 18px "Lato", "Arial", sans-serif;
+}
+#All {
+  background-color: rgba(0,0,0,.25);
+  font:300 18px "Lato", "Arial", sans-serif;
+}
+
+.label__checkbox {
+  display: none;
+}
+.label__check {
+  display: inline-block;
+  border-radius: 50%;
+  border: 5px solid rgba(0, 0, 0, 0.1);
+  background: white;
+  vertical-align: middle;
+  margin-right: 20px;
+  width: 2em;
+  height: 2em;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: border .3s ease;
+  transition: border .3s ease;
+}
+.label__check i.icon {
+  opacity: 0.2;
+  font-size: 36px;
+  color: transparent;
+  -webkit-transition: opacity .3s .1s ease;
+  transition: opacity .3s .1s ease;
+  -webkit-text-stroke: 3px rgba(0, 0, 0, 0.5);
+}
+.label__check:hover {
+  border: 5px solid rgba(0, 0, 0, 0.2);
+}
+.label__checkbox:checked + .label__text .label__check {
+  -webkit-animation: check 0.5s cubic-bezier(0.895, 0.03, 0.685, 0.22) 1 forwards;
+          animation: check 0.5s cubic-bezier(0.895, 0.03, 0.685, 0.22) 1 forwards;
+}
+.label__checkbox:checked + .label__text .label__check .icon {
+  opacity: 1;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  color: white;
+  -webkit-text-stroke: 0;
+  -webkit-animation: icon 0.3s cubic-bezier(1, 0.008, 0.565, 1.65) 0.1s 1 forwards;
+          animation: icon 0.3s cubic-bezier(1, 0.008, 0.565, 1.65) 0.1s 1 forwards;
+}
+
+.center {
+ float: left;
+}
+
+.remove {
+  float: right;
+}
+@-webkit-keyframes icon {
+  from {
+    opacity: 0;
+    -webkit-transform: scale(0.3);
+            transform: scale(0.3);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes icon {
+  from {
+    opacity: 0;
+    -webkit-transform: scale(0.3);
+            transform: scale(0.3);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@-webkit-keyframes check {
+  0% {
+    width: 1.5em;
+    height: 1.5em;
+    border-width: 5px;
+  }
+  10% {
+    width: 1.5em;
+    height: 1.5em;
+    opacity: 0.1;
+    background: rgba(0, 0, 0, 0.2);
+    border-width: 15px;
+  }
+  12% {
+    width: 1.5em;
+    height: 1.5em;
+    opacity: 0.4;
+    background: rgba(0, 0, 0, 0.1);
+    border-width: 0;
+  }
+  50% {
+    width: 2em;
+    height: 2em;
+    background: #00d478;
+    border: 0;
+    opacity: 0.6;
+  }
+  100% {
+    width: 2em;
+    height: 2em;
+    background: #00d478;
+    border: 0;
+    opacity: 1;
+  }
+}
+@keyframes check {
+  0% {
+    width: 1.5em;
+    height: 1.5em;
+    border-width: 5px;
+  }
+  10% {
+    width: 1.5em;
+    height: 1.5em;
+    opacity: 0.1;
+    background: rgba(0, 0, 0, 0.2);
+    border-width: 15px;
+  }
+  12% {
+    width: 1.5em;
+    height: 1.5em;
+    opacity: 0.4;
+    background: rgba(0, 0, 0, 0.1);
+    border-width: 0;
+  }
+  50% {
+    width: 2em;
+    height: 2em;
+    background: #00d478;
+    border: 0;
+    opacity: 0.6;
+  }
+  100% {
+    width: 2em;
+    height: 2em;
+    background: #00d478;
+    border: 0;
+    opacity: 1;
+  }
+}

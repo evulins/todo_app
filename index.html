@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>TO DO APP</title>
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+ 
+</head>
+
+<body>
+	<div class="taskApp">
+        <header class="main-header">
+            <h1>todos</h1>
+        </header>
+        <div class="task-container">
+        <form id="newTaskForm">
+            <div class="form">
+                <input type="text" id="newTask" name="newTask" placeholder="What needs to be done" />
+            </div>
+        </form>
+		<div class="listForm">
+        	<ul id="tasks"></ul>
+        </div>
+
+        <footer>
+        	<ul>
+				<li><div class="count"><span></span> items left</div></li>
+				<li><input type="button" id="All" name="All" value="All" /></li>
+				<li><input type="button" id="Active" name="Active" value="Active" /></li>
+				<li><input type="button" id="Completed" name="Completed" value="Completed" /></li>
+				<li><input type="button" id="clearCompleted" name="clearCompleted" value="Clear completed" /></li>
+			</ul>
+        </footer>
+        
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="design.js"></script>
+</body>
+
+</html>
